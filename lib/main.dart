@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
       title: 'DeliMeals',
       theme: ThemeData(
           primarySwatch: Colors.pink,
-          accentColor: Colors.amber,
-          fontFamily: 'Raleway',
-          canvasColor: Color.fromRGBO(255, 254, 229, 1),
+          accentColor: Colors.amber,  
+          fontFamily: 'Raleway', // Fonte padrão definida como Raleway
+          canvasColor: Color.fromRGBO(255, 254, 229, 1), //Cor de fundo branco padrão
           textTheme: ThemeData.light().textTheme.copyWith(
                 title: TextStyle(
                   fontSize: 20,
