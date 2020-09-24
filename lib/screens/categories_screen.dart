@@ -5,11 +5,7 @@ import '../data/dummy_data.dart';
 class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title : Text('Vamos Cozinhar?'),
-      ),
-      body: GridView(
+    return GridView(
         padding: const EdgeInsets.all(25),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200, //Tamanho máximo para minha child
@@ -21,7 +17,6 @@ class CategoriesScreen extends StatelessWidget {
         children: DUMMY_CATEGORIES.map((cat) {
           return CategoryItem(cat);
         }).toList(),
-      ),
-    );
+      );
   }
 }
